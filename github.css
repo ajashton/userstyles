@@ -1,0 +1,25 @@
+@-moz-document domain("github.com") {
+
+// Adds a thick border to either side of the page as a more
+// noticeable visible indicator of public/private repositories.
+// green - public repo
+// gold  - private repo
+// grey  - non-repo page (eg account settings, notifications)
+
+body {
+    border-color: #f0f0f0;
+    border-style: solid;
+    border-width: 0px 24px;
+}
+body .wrapper {
+    border-color: #e0e0e0;
+    border-style: solid;
+    border-width: 0px 1px;
+}
+
+body.vis-private { border-color: #F8EEC7; }
+body.vis-private .wrapper { border-color: #E9DBA5; }
+
+body.vis-public { border-color: #89DC6C; }
+body.vis-public .wrapper { border-color: #5CA941; }
+}
