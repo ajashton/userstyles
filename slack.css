@@ -13,3 +13,6 @@
 .dense_theme .message.divider {
   border-top: 1px solid #f8f8f8;
 }
+
+/* remove fading during channel switching */
+#msgs_overlay_div { display:none !important; }
