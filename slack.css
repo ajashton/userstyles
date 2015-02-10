@@ -1,0 +1,15 @@
+/* split usernames and messages on a central column */
+.dense_theme .message_content {
+  display: inline-block;
+  margin-left: 10em;
+}
+.dense_theme .message_sender {
+  display: inline-block;
+  position: absolute;
+  float: left;
+  width: 10em;
+  text-align: right;
+}
+.dense_theme .message.divider {
+  border-top: 1px solid #f8f8f8;
+}
