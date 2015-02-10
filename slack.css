@@ -1,6 +1,8 @@
 /* split usernames and messages on a central column */
-.dense_theme .message_content {
-  display: inline-block;
+.dense_theme .message_content { display: inline-block; }
+.dense_theme .message_content,
+.dense_theme .file_details,
+.dense_theme .file_reference .msg_inline_holder {
   margin-left: 10em;
 }
 .dense_theme .message_sender {
@@ -13,6 +15,17 @@
 .dense_theme .message.divider {
   border-top: 1px solid #f8f8f8;
 }
+.dense_theme .message.file_reference .file_details a.icon {
+  /* hide file icons, which seem redundant */
+  display: none;
+}
 
-/* remove fading during channel switching */
-#msgs_overlay_div { display:none !important; }
+/* remove fading during room switching */
+#msgs_overlay_div {
+  display: none !important;
+}
+
+/* hide user joined messages */
+.message.joined {
+  display: none;
+}
