@@ -24,8 +24,3 @@
 #msgs_overlay_div {
   display: none !important;
 }
-
-/* hide user joined messages */
-.message.joined {
-  display: none;
-}
