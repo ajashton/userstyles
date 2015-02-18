@@ -1,21 +1,21 @@
 /* split usernames and messages on a central column */
-.dense_theme .message_content { display: inline-block; }
-.dense_theme .message_content,
-.dense_theme .file_details,
-.dense_theme .file_reference .msg_inline_holder {
+.dense_theme #messages_container .message_content { display: inline-block; }
+.dense_theme #messages_container .message_content,
+.dense_theme #messages_container .file_details,
+.dense_theme #messages_container .file_reference .msg_inline_holder {
   margin-left: 10em;
 }
-.dense_theme .message_sender {
+.dense_theme #messages_container .message_sender {
   display: inline-block;
   position: absolute;
   float: left;
   width: 10em;
   text-align: right;
 }
-.dense_theme .message.divider {
+.dense_theme #messages_container .message.divider {
   border-top: 1px solid #f8f8f8;
 }
-.dense_theme .message.file_reference .file_details a.icon {
+.dense_theme #messages_container .message.file_reference .file_details a.icon {
   /* hide file icons, which seem redundant */
   display: none;
 }
